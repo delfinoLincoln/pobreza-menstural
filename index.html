@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pobreza Menstrual no Brasil: Uma questão de saúde pública e direitos humanos. Conheça os dados, as consequências e as soluções.">
+    <meta name="keywords" content="pobreza menstrual, brasil, menstruação, direitos humanos, desigualdade">
+    <meta name="author" content="Plataforma Dignidade Menstrual">
+    <title>Dignidade e Pobreza Menstrual no Brasil</title>
+
+    <link rel="icon" type="image/jpg" href="assets/img/favicon.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body class="font-inter text-azul-texto bg-fundo-suave overflow-x-hidden">
+
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-vermelho-impacto to-rosa-acolhedor rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                        ♀
+                    </div>
+                    <span class="font-poppins font-bold text-lg text-vermelho-impacto hidden sm:inline">Dignidade
+                        Menstrual</span>
+                </div>
+
+                <div class="hidden md:flex gap-8 items-center">
+                    <a href="#dados"
+                        class="nav-link text-sm font-medium hover:text-vermelho-impacto transition">Dados</a>
+                    <a href="#sobre"
+                        class="nav-link text-sm font-medium hover:text-vermelho-impacto transition">Sobre</a>
+                    <a href="#afetados"
+                        class="nav-link text-sm font-medium hover:text-vermelho-impacto transition">Afetados</a>
+                    <a href="#consequencias"
+                        class="nav-link text-sm font-medium hover:text-vermelho-impacto transition">Consequências</a>
+                    <a href="#solucoes"
+                        class="nav-link text-sm font-medium hover:text-vermelho-impacto transition">Soluções</a>
+                </div>
+
+                <button class="md:hidden text-vermelho-impacto" id="menu-toggle" title="Abrir menu de navegação"
+                    aria-label="Menu de navegação">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="hidden mobile-menu md:hidden bg-white shadow-lg" id="mobile-menu">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#dados"
+                    class="block nav-link text-sm font-medium hover:text-vermelho-impacto transition py-2">Dados</a>
+                <a href="#sobre"
+                    class="block nav-link text-sm font-medium hover:text-vermelho-impacto transition py-2">Sobre</a>
+                <a href="#afetados"
+                    class="block nav-link text-sm font-medium hover:text-vermelho-impacto transition py-2">Afetados</a>
+                <a href="#consequencias"
+                    class="block nav-link text-sm font-medium hover:text-vermelho-impacto transition py-2">Consequências</a>
+                <a href="#solucoes"
+                    class="block nav-link text-sm font-medium hover:text-vermelho-impacto transition py-2">Soluções</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20" id="hero">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06b0b514b65?w=1200&h=800&fit=crop"
+                alt="Menina em sala de aula" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-vermelho-impacto/50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
+            <h1 class="font-poppins text-4xl md:text-6xl bold mb-6 leading-tight animate-fade-up" data-aos="fade-up">
+                Pobreza Menstrual no Brasil
+            </h1>
+            <p class="font-poppins text-2xl md:text-3xl font-bold mb-4 text-rosa-acolhedor" data-aos="fade-up"
+                data-aos-delay="100">
+                DIGNIDADE NÃO É PRIVILÉGIO
+            </p>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up"
+                data-aos-delay="200">
+                1 em cada 4 meninas já faltou à escola por não ter absorventes. A desigualdade menstrual é uma questão
+                de saúde pública e direitos humanos.
+            </p>
+            <a href="#dados"
+                class="inline-block bg-vermelho-impacto hover:bg-red-700 text-white font-poppins font-bold py-4 px-8 rounded-lg transition transform hover:scale-105"
+                data-aos="fade-up" data-aos-delay="300">
+                Conheça os Dados ↓
+            </a>
+        </div>
+    </header>
+
+    <section id="dados" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-4 text-azul-texto">
+                    Dados que Chocam
+                </h2>
+                <p class="text-lg text-gray-600">Números que demonstram a urgência do problema</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-impact bg-gradient-to-br from-vermelho-impacto to-red-600 text-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="zoom-in" data-aos-delay="0">
+                    <div class="text-5xl mb-4 font-poppins font-bold">25%</div>
+                    <p class="text-lg font-semibold">Meninas faltaram à escola por não ter absorventes</p>
+                    <p class="text-sm mt-4 opacity-90">1 em cada 4 estudantes</p>
+                </div>
+
+                <div class="card-impact bg-gradient-to-br from-rosa-acolhedor to-pink-400 text-azul-texto p-8 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-5xl mb-4 font-poppins font-bold">713 mil</div>
+                    <p class="text-lg font-semibold">Meninas sem banheiro em casa</p>
+                    <p class="text-sm mt-4 text-gray-700">Vivendo sem o básico</p>
+                </div>
+
+                <div class="card-impact bg-gradient-to-br from-laranja-destaque to-orange-400 text-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-5xl mb-4 font-poppins font-bold">900 mil</div>
+                    <p class="text-lg font-semibold">Meninas sem água encanada</p>
+                    <p class="text-sm mt-4 opacity-90">Sem acesso a higiene básica</p>
+                </div>
+
+                <div class="card-impact bg-gradient-to-br from-purple-500 to-pink-500 text-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-5xl mb-4 font-poppins font-bold">50%</div>
+                    <p class="text-lg font-semibold">Improvisaram absorventes</p>
+                    <p class="text-sm mt-4 opacity-90">Papel, pano e alternativas inseguras</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-gradient-to-b from-fundo-suave to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-up">
+                    <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-6">
+                        O que é Pobreza Menstrual?
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Pobreza menstrual não é apenas <span class="font-bold text-vermelho-impacto">falta de
+                            absorventes</span>. É um problema estrutural que envolve a impossibilidade de meninas e
+                        mulheres de baixa renda acessarem produtos básicos de higiene, água potável, saneamento e
+                        informação durante o período menstrual.
+                    </p>
+
+                    <div class="space-y-6 mb-8">
+                        <div
+                            class="bg-white rounded-xl p-5 shadow-sm flex items-center gap-5 hover:shadow-md transition">
+                            <div
+                                class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-2xl font-bold text-red-600">
+                                1
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-800 text-lg">Meninas em Escolas Públicas</h3>
+                                <p class="text-gray-600">Faltam às aulas durante o período menstrual</p>
+                                <p class="text-sm text-red-500 font-semibold mt-1"> 1 em cada 4 já faltou à escola</p>
+                            </div>
+                            <span class="text-4xl"></span>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-5 shadow-sm flex items-center gap-5 hover:shadow-md transition">
+                            <div
+                                class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-2xl font-bold text-red-600">
+                                2
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-800 text-lg">Comunidades Periféricas</h3>
+                                <p class="text-gray-600">Sem acesso a saneamento básico e infraestrutura</p>
+                                <p class="text-sm text-red-500 font-semibold mt-1"> 713 mil sem banheiro em casa</p>
+                            </div>
+                            <span class="text-4xl"></span>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-xl p-5 shadow-sm flex items-center gap-5 hover:shadow-md transition">
+                            <div
+                                class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-2xl font-bold text-red-600">
+                                3
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-800 text-lg">Zonas Rurais</h3>
+                                <p class="text-gray-600">Sem água encanada e banheiros adequados</p>
+                                <p class="text-sm text-red-500 font-semibold mt-1"> 900 mil sem água encanada</p>
+                            </div>
+                            <span class="text-4xl"></span>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-r from-red-50 to-pink-50 rounded-xl p-5 flex items-center gap-5 shadow-md border-l-4 border-red-500">
+                            <div
+                                class="w-16 h-16 bg-red-200 rounded-full flex items-center justify-center text-2xl font-bold text-red-700">
+                                4
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-800 text-lg">Meninas Negras</h3>
+                                <p class="text-gray-700">Desigualdade racial agrava o problema</p>
+                                <p class="text-xl font-bold text-red-600 mt-1">3x mais chances de serem afetadas</p>
+                            </div>
+                            <span class="text-4xl"></span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-r from-vermelho-impacto/10 to-rosa-acolhedor/10 border-l-4 border-vermelho-impacto p-6 rounded-lg">
+                        <p class="text-azul-texto font-semibold text-lg">
+                            <span class="text-vermelho-impacto font-bold">94%</span> das mulheres de baixa renda não
+                            sabem o que é pobreza menstrual
+                        </p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <img src="assets/img/pobreza-menstrual.png" alt="Comunidade brasileira"
+                        class="rounded-xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" class="order-2 lg:order-1">
+                    <img src="assets/img/contexto-no-Brasil.png" alt="Contexto Brasil - comunidade"
+                        class="rounded-xl shadow-xl">
+                </div>
+
+                <div data-aos="fade-up" class="order-1 lg:order-2">
+                    <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-6">
+                        Contexto no Brasil
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        O Brasil é um dos países com maior desigualdade social. A pobreza menstrual não é um problema
+                        isolado, mas um sintoma de estruturas históricas de exclusão e desigualdade.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="p-4 bg-cinza-info rounded-lg">
+                            <p class="font-bold text-vermelho-impacto mb-2">713 mil meninas vivem sem banheiro</p>
+                            <p class="text-gray-700">Sem acesso básico a um espaço privado para higiene menstrual</p>
+                        </div>
+                        <div class="p-4 bg-cinza-info rounded-lg">
+                            <p class="font-bold text-vermelho-impacto mb-2">900 mil meninas sem água encanada</p>
+                            <p class="text-gray-700">Impossível manter higiene adequada para a saúde menstrual</p>
+                        </div>
+                        <div class="p-4 bg-cinza-info rounded-lg">
+                            <p class="font-bold text-vermelho-impacto mb-2">Desigualdade Racial Agravada</p>
+                            <p class="text-gray-700">Meninas negras têm 3x mais chances de não ter acesso</p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-gray-700 italic">
+                        "O problema é <span class="font-bold">estrutural</span>, não individual. Não é falta de vontade
+                        das meninas, é falta de políticas públicas."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="afetados" class="py-20 bg-gradient-to-b from-fundo-suave to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-4">
+                    Quem é Afetado?
+                </h2>
+                <p class="text-lg text-gray-600">A pobreza menstrual atinge grupos específicos com maior intensidade</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-xl font-bold mb-3">Meninas em Escolas Públicas</h3>
+                    <p class="text-gray-600">Enfrentam mais frequentemente a falta de absorventes e saneamento adequado
+                        nas escolas.</p>
+                </div>
+
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-xl font-bold mb-3">Comunidades Periféricas</h3>
+                    <p class="text-gray-600">Com falta de infraestrutura de saneamento básico e acesso a produtos.</p>
+                </div>
+
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-xl font-bold mb-3">Zonas Rurais</h3>
+                    <p class="text-gray-600">Sem saneamento básico, água encanada ou acesso a produtos menstruais.</p>
+                </div>
+
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-xl font-bold mb-3">Meninas Negras</h3>
+                    <p class="text-gray-600"><span class="font-bold text-vermelho-impacto">3x mais chances</span> de não
+                        ter acesso a itens de higiene.</p>
+                </div>
+
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-xl font-bold mb-3">Mulheres em Situação de Rua</h3>
+                    <p class="text-gray-600">Sem acesso a higiene pessoal, privacidade ou absorventes.</p>
+                </div>
+
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-xl font-bold mb-3">Pessoas com Deficiência</h3>
+                    <p class="text-gray-600">Enfrentam barreiras adicionais de acesso e autonomia menstrual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consequencias" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-4">
+                    Consequências
+                </h2>
+                <p class="text-lg text-gray-600">Os impactos reais na vida de meninas e mulheres</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-10 rounded-xl shadow-lg" data-aos="fade-up"
+                    data-aos-delay="0">
+                    <div class="text-6xl mb-6 text-center"></div>
+                    <h3 class="font-poppins text-2xl font-bold mb-4 text-center text-azul-texto">Impacto Educacional
+                    </h3>
+                    <div class="bg-white p-4 rounded-lg mb-4">
+                        <p class="text-3xl font-bold text-blue-600 text-center">45%</p>
+                        <p class="text-center text-gray-700 mt-2">Tiveram desempenho escolar prejudicado</p>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✗ Ausências frequentes</li>
+                        <li>✗ Dificuldade de concentração</li>
+                        <li>✗ Queda no aproveitamento</li>
+                        <li>✗ Risco de evasão escolar</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-red-100 p-10 rounded-xl shadow-lg" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="text-6xl mb-6 text-center"></div>
+                    <h3 class="font-poppins text-2xl font-bold mb-4 text-center text-vermelho-impacto">Impacto na Saúde
+                    </h3>
+                    <div class="bg-white p-4 rounded-lg mb-4">
+                        <p class="text-3xl font-bold text-vermelho-impacto text-center">50%</p>
+                        <p class="text-center text-gray-700 mt-2">Improvisaram absorventes</p>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✗ Risco de infecções</li>
+                        <li>✗ Candidíase e Dermatites</li>
+                        <li>✗ Infecções Urinárias</li>
+                        <li>✗ Síndrome do Choque Tóxico</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-10 rounded-xl shadow-lg" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="text-6xl mb-6 text-center"></div>
+                    <h3 class="font-poppins text-2xl font-bold mb-4 text-center text-purple-700">Impacto Social</h3>
+                    <div class="bg-white p-4 rounded-lg mb-4">
+                        <p class="text-3xl font-bold text-purple-600 text-center">94%</p>
+                        <p class="text-center text-gray-700 mt-2">Não sabem o que é pobreza menstrual</p>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✗ Isolamento social</li>
+                        <li>✗ Má autoestima</li>
+                        <li>✗ Problemas psicológicos</li>
+                        <li>✗ Invisibilidade do problema</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="riscos" class="py-20 bg-gradient-to-b from-fundo-suave to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-4">
+                    Riscos à Saúde
+                </h2>
+                <p class="text-lg text-gray-600 mb-6">Consequências médicas que podem ser prevenidas</p>
+                <div
+                    class="inline-block bg-yellow-100 border-2 border-yellow-500 text-yellow-800 px-6 py-3 rounded-lg font-semibold">
+                    Estes riscos são PREVENÍVEIS com acesso adequado
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-orange-500"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-5xl mb-4"></div>
+                    <h3 class="font-bold text-lg mb-3 text-azul-texto">Candidíase</h3>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><span class="font-semibold">Causa:</span> Umidade excessiva e higiene inadequada</p>
+                        <p><span class="font-semibold">Sintomas:</span> Coceira, ardência, corrimento</p>
+                        <p><span class="font-semibold">Prevenção:</span> Absorventes de qualidade + água limpa</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-blue-500"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl mb-4"></div>
+                    <h3 class="font-bold text-lg mb-3 text-azul-texto">Infecção Urinária</h3>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><span class="font-semibold">Causa:</span> Falta de higiene e água potável</p>
+                        <p><span class="font-semibold">Sintomas:</span> Ardência ao urinar, urgência</p>
+                        <p><span class="font-semibold">Prevenção:</span> Água encanada e saneamento</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-red-500"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-4"></div>
+                    <h3 class="font-bold text-lg mb-3 text-azul-texto">Dermatites</h3>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><span class="font-semibold">Causa:</span> Atrito com absorventes inadequados</p>
+                        <p><span class="font-semibold">Sintomas:</span> Vermelhidão, irritação, dor</p>
+                        <p><span class="font-semibold">Prevenção:</span> Absorventes apropriados</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-purple-500"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl mb-4"></div>
+                    <h3 class="font-bold text-lg mb-3 text-azul-texto">Síndrome do Choque Tóxico</h3>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><span class="font-semibold">Causa:</span> Absorventes retidos por horas</p>
+                        <p><span class="font-semibold">Sintomas:</span> Febre alta, choque, rash</p>
+                        <p><span class="font-semibold">Prevenção:</span> Trocar absorvente regularmente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-r from-black/90 to-azul-texto text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-up">
+                    <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-6">
+                        Desigualdade Racial
+                    </h2>
+                    <div class="bg-vermelho-impacto/20 border-l-4 border-rosa-acolhedor p-6 rounded-lg mb-8">
+                        <p class="text-3xl font-bold font-poppins mb-2">
+                            Meninas negras têm <span class="text-rosa-acolhedor">3x mais chances</span>
+                        </p>
+                        <p class="text-lg">de não ter acesso a itens de higiene menstrual</p>
+                    </div>
+
+                    <p class="text-lg mb-6 leading-relaxed">
+                        A pobreza menstrual é profundamente marcada pelo racismo estrutural.
+                        Meninas negras e pardas enfrentam não apenas a falta de recursos econômicos,
+                        mas também discriminação sistemática que reduz ainda mais seu acesso a direitos básicos.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="font-bold">Maioria entre os vulneráveis</p>
+                                <p class="text-sm opacity-90">94% das meninas sem acesso em pobreza extrema são negras e
+                                    pardas</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="font-bold">Concentradas em periferias</p>
+                                <p class="text-sm opacity-90">Comunidades com maior concentração populacional negra têm
+                                    pior infraestrutura</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="font-bold">Empoderamento e Resistência</p>
+                                <p class="text-sm opacity-90">Movimentos negros liderem ações de dignidade menstrual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <img src="assets/img/desigualdade-social.jpg" alt="Empoderamento de meninas negras"
+                        class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-4">
+                    Soluções
+                </h2>
+                <p class="text-lg text-gray-600">Caminhos para resolver a pobreza menstrual no Brasil</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-10 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-2xl font-bold mb-4 text-blue-900">Políticas Públicas</h3>
+                    <p class="text-gray-700 mb-6">Ações governamentais essenciais para garantir direitos menstruais</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Distribuição gratuita de absorventes em escolas públicas</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Isenção de impostos em produtos menstruais</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Investimento em saneamento básico</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Lei de proteção à dignidade menstrual</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-verde-solucao/10 p-10 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-2xl font-bold mb-4 text-verde-solucao">ONGs e Sociedade Civil</h3>
+                    <p class="text-gray-700 mb-6">Ações comunitárias que geram impacto imediato</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-verde-solucao font-bold">✓</span>
+                            <span>Campanhas de arrecadação e doação</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-verde-solucao font-bold">✓</span>
+                            <span>Conscientização e combate ao tabu menstrual</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-verde-solucao font-bold">✓</span>
+                            <span>Distribuição direta em comunidades</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-verde-solucao font-bold">✓</span>
+                            <span>Parcerias com empresas responsáveis</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-amber-50 to-laranja-destaque/10 p-10 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-2xl font-bold mb-4 text-amber-900">Alternativas Sustentáveis</h3>
+                    <p class="text-gray-700 mb-6">Produtos reutilizáveis e ecológicos de menor custo</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-amber-600 font-bold">✓</span>
+                            <span>Copo menstrual (reutilizável por anos)</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-amber-600 font-bold">✓</span>
+                            <span>Absorventes de pano reutilizáveis</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-amber-600 font-bold">✓</span>
+                            <span>Cuecas menstruais sustentáveis</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-amber-600 font-bold">✓</span>
+                            <span>Programas de fabricação local</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-10 rounded-xl shadow-lg hover:shadow-2xl transition"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-6xl mb-4"></div>
+                    <h3 class="font-poppins text-2xl font-bold mb-4 text-purple-900">Educação e Informação</h3>
+                    <p class="text-gray-700 mb-6">Conhecimento é o primeiro passo para a mudança</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-purple-600 font-bold">✓</span>
+                            <span>Educação menstrual nas escolas</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-purple-600 font-bold">✓</span>
+                            <span>Quebrar tabus e estigmas sociais</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-purple-600 font-bold">✓</span>
+                            <span>Campanhas de saúde e higiene</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-purple-600 font-bold">✓</span>
+                            <span>Conversas abertas e sem tabu</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prevencao" class="py-20 bg-gradient-to-b from-fundo-suave to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-4">
+                    Como Ajudar
+                </h2>
+                <p class="text-lg text-gray-600">Ações concretas que você pode fazer agora</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div data-aos="fade-up">
+                    <h3 class="font-poppins text-2xl font-bold mb-8 text-vermelho-impacto">
+                        Para Quem Menstrua
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-vermelho-impacto text-white rounded-full font-bold">1</span>
+                            <div>
+                                <p class="font-bold">Conhecer seus direitos</p>
+                                <p class="text-gray-600 text-sm">Saiba que dignidade menstrual é um direito humano</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-vermelho-impacto text-white rounded-full font-bold">2</span>
+                            <div>
+                                <p class="font-bold">Buscar informação</p>
+                                <p class="text-gray-600 text-sm">Educação sexual abrangente e saúde menstrual</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-vermelho-impacto text-white rounded-full font-bold">3</span>
+                            <div>
+                                <p class="font-bold">Higiene adequada</p>
+                                <p class="text-gray-600 text-sm">Cuidados de higiene quando possível tiver recursos</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-vermelho-impacto text-white rounded-full font-bold">4</span>
+                            <div>
+                                <p class="font-bold">Denunciar violações</p>
+                                <p class="text-gray-600 text-sm">Reportar falta de banheiro ou saneamento nas escolas
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-vermelho-impacto text-white rounded-full font-bold">5</span>
+                            <div>
+                                <p class="font-bold">Se organizar coletivamente</p>
+                                <p class="text-gray-600 text-sm">Conversar com amigas, parentes e comunidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="font-poppins text-2xl font-bold mb-8 text-verde-solucao">
+                        Para a Sociedade
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-verde-solucao text-white rounded-full font-bold">1</span>
+                            <div>
+                                <p class="font-bold">Conscientizar-se</p>
+                                <p class="text-gray-600 text-sm">Entender o problema além do senso comum</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-verde-solucao text-white rounded-full font-bold">2</span>
+                            <div>
+                                <p class="font-bold">Compartilhar informação</p>
+                                <p class="text-gray-600 text-sm">Indicar este site e quebrar mitos sobre menstruação</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-verde-solucao text-white rounded-full font-bold">3</span>
+                            <div>
+                                <p class="font-bold">Apoiar ONGs</p>
+                                <p class="text-gray-600 text-sm">Doar absorventes, contribuir financeiramente ou com
+                                    tempo</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-verde-solucao text-white rounded-full font-bold">4</span>
+                            <div>
+                                <p class="font-bold">Exigir políticas públicas</p>
+                                <p class="text-gray-600 text-sm">Cobrar do governo medidas e investimentos</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-lg shadow">
+                            <span
+                                class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-verde-solucao text-white rounded-full font-bold">5</span>
+                            <div>
+                                <p class="font-bold">Defender direitos</p>
+                                <p class="text-gray-600 text-sm">Participar de movimentos sociais por justiça menstrual
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusao" class="py-20 bg-gradient-to-r from-vermelho-impacto to-red-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-6">
+                    A Mudança Começa com Você
+                </h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Pobreza menstrual é um problema <span class="font-bold">real e urgente</span>, mas <span
+                        class="font-bold">solúvel</span>. Com conscientização, ação coletiva e políticas públicas,
+                    podemos garantir dignidade menstrual a todas as meninas e mulheres brasileiras.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12" data-aos="zoom-in">
+                <div class="bg-white/20 backdrop-blur-sm p-8 rounded-xl text-center">
+                    <p class="text-3xl font-bold font-poppins mb-2">1 em 4</p>
+                    <p class="text-lg">Meninas faltam à escola</p>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm p-8 rounded-xl text-center">
+                    <p class="text-3xl font-bold font-poppins mb-2">1,6 mi</p>
+                    <p class="text-lg">Meninas sem acesso básico</p>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm p-8 rounded-xl text-center">
+                    <p class="text-3xl font-bold font-poppins mb-2">∞ Potencial</p>
+                    <p class="text-lg">Para transformação</p>
+                </div>
+            </div>
+
+            <div class="text-center" data-aos="fade-up">
+                <button
+                    class="bg-white text-vermelho-impacto font-poppins font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition transform hover:scale-105 inline-block mr-4 mb-4"
+                    onclick="shareContent()">
+                    Compartilhe esta Informação
+                </button>
+                <a href="#hero"
+                    class="inline-block bg-transparent border-2 border-white text-white font-poppins font-bold py-4 px-8 rounded-lg hover:bg-white/10 transition">
+                    ↑ Voltar ao Topo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-azul-texto text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-poppins font-bold text-lg mb-4">Sobre</h3>
+                    <p class="text-sm opacity-90">
+                        Site informativo criado para conscientizar sobre a pobreza menstrual no Brasil. Com dados reais e informações acessíveis, 
+                        buscamos mostrar como a falta de acesso a produtos de higiene, 
+                        saneamento e informação afeta a saúde, a educação e a dignidade de meninas e mulheres. 
+                        Informar é o primeiro passo para transformar essa realidade.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-poppins font-bold text-lg mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#hero" class="opacity-80 hover:opacity-100 transition">∧ Início</a></li>
+                        <li><a href="#dados" class="opacity-80 hover:opacity-100 transition">Dados</a></li>
+                        <li><a href="#afetados" class="opacity-80 hover:opacity-100 transition">Afetados</a></li>
+                        <li><a href="#solucoes" class="opacity-80 hover:opacity-100 transition">Soluções</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-poppins font-bold text-lg mb-4">Fontes dos Dados</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">UNICEF Brasil</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">Instituto Avon</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">IBGE</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">ONU Mulheres</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 text-center text-sm opacity-75">
+                <p>Projeto de Linguá Portuguesa II, desenvolvido no IFPR - Campus Paranaguá</p>
+                <p class="mt-2">© 2026 Lincoln Delfino. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-vermelho-impacto text-white p-4 rounded-full shadow-lg hover:shadow-2xl transition opacity-0 invisible"
+        title="Voltar ao topo" aria-label="Botão voltar ao topo" onclick="scrollToTop()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
